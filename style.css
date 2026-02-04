@@ -35,7 +35,7 @@ li {
     padding-left: 35px;
     padding-right: 35px;
     height: 130px;
-    animation: headerAnim 1s ease-in forwards;
+    animation: headerAnim 1.5s ease-in forwards;
 }
 @keyframes headerAnim {
     0% {
@@ -212,8 +212,12 @@ span:hover {
     color: white;
     border: none;
     cursor: pointer;
+    transition: all 0.5s ease-in;
 }
-
+.button:hover {
+    color: #FF9142;
+    background-color: white;
+}
 .image {
     position: relative;
 }
@@ -252,13 +256,12 @@ span:hover {
 }
 
 .pupil {
-    background-color: #656363;
+    background-color: rgb(198, 52, 198);
     border-radius: 20px;
-    padding-bottom: 10px;
-    color: white;
+    padding-bottom: 4px;
+    color: rgb(209, 209, 28);
     transition: all 0.4s ease-in;
 }
-
 .pupil:hover {
     transform: scale(1.1);
 }
@@ -459,6 +462,7 @@ span:hover {
 }
 .family__img:hover {
     transform: scale(1.1);
+    box-shadow: 8px 35px 75px rgba(56, 219, 243, 0.3);
 }
 .members {
     color: white;
